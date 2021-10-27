@@ -2,17 +2,87 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
   </head>
   <body>
-    <section class="section player-section">
+    <header class="section top-menu">
       <button class="minimize-button">
-	<ion-icon name="chevron-down-outline"></ion-icon>
+	<ion-icon name="chevron-down"></ion-icon>
       </button>
+      <div class="title-text">
+	<p class="playing-from-text">Playing from your library</p>
+	<p class="list-playing-from">Liked Songs</p>
+      </div>
+      <button class="options">
+	<ion-icon name="ellipsis-vertical"></ion-icon>
+      </button>
+    </header>
+    <section class="section player-section">
+      <figure class="cover">
+	<img src="img/album-cover.jpg" alt="album-cover">
+      </figure>
+      <div class="song-control">
+	<div class="song-info">
+	  <div clas="song-text">
+	    <p class="song-name">Not afraid</p>
+	    <p class="artist">Eminem</p>
+	  </div>
+	  <div class="heart">
+	    <ion-icon name="heart"></ion-icon>
+	  </div>
+	</div>
+	<menu class="song-menu">
+	  <input class="song-duration" type="range">
+	  <div class="player-buttons">
+	    <button class="random-button">
+	      <ion-icon name="shuffle"></ion-icon>
+	    </button>
+
+	    <div class="main-buttons">
+	      <button class="backward-button">
+		<ion-icon name="play-skip-back"></ion-icon>
+	      </button>
+
+	      <button class="play-pause-button">
+		<ion-icon name="play"></ion-icon>
+	      </button>
+
+	      <button class="forward-button">
+		<ion-icon name="play-skip-forward"></ion-icon>
+	      </button>
+	    </div>
+
+	    <button class="repeat-button">
+	      <ion-icon name="repeat"></ion-icon>
+	    </button>
+	  </div>
+	</menu>
+	<menu class="songs-submenu">
+	  <button class="playing-on">
+	    <ion-icon name="desktop-outline"></ion-icon>
+	  </button>
+	  <button class="song-list">
+	    <ion-icon name="menu"></ion-icon>
+	  </button>
+	</menu>
+      </div>
     </section>
     <section class="section lyrics-section">
-
+      <header class="header-text">
+	<p>Lyrics</p>
+      </header>
+      <div class="lyrics">
+	Amet sapiente inventore aperiam harum vero maiores. Esse possimus nisi voluptates sapiente nostrum. Aliquam ipsum dolor nostrum obcaecati esse Omnis eius cupiditate quas repellat assumenda soluta, placeat Incidunt soluta in.
+      </div>
+      <button class="share-button">
+	<ion-icon name="share-social-outline"></ion-icon>
+	<p>Share</p>
+      </button>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
