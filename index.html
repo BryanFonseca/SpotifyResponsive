@@ -12,7 +12,7 @@
   <body>
     <header class="section top-menu">
       <button class="minimize-button">
-	<ion-icon name="chevron-down"></ion-icon>
+	<ion-icon class="minimize-icon" name="chevron-down-outline"></ion-icon>
       </button>
       <div class="title-text">
 	<p class="playing-from-text">Playing from your library</p>
@@ -37,7 +37,13 @@
 	  </div>
 	</div>
 	<menu class="song-menu">
-	  <input class="song-duration" type="range">
+	  <div class="duration-container">
+	    <input class="song-duration-bar" type="range">
+	    <div class="time-stamps">
+	      <span class="current-time">1:08</span>
+	      <span class="song-time">4:19</span>
+	    </div>
+	  </div>
 	  <div class="player-buttons">
 	    <button class="random-button">
 	      <ion-icon name="shuffle"></ion-icon>
@@ -62,27 +68,38 @@
 	    </button>
 	  </div>
 	</menu>
-	<menu class="songs-submenu">
-	  <button class="playing-on">
-	    <ion-icon name="desktop-outline"></ion-icon>
-	  </button>
-	  <button class="song-list">
-	    <ion-icon name="menu"></ion-icon>
-	  </button>
-	</menu>
       </div>
     </section>
     <section class="section lyrics-section">
-      <header class="header-text">
-	<p>Lyrics</p>
-      </header>
-      <div class="lyrics">
-	Amet sapiente inventore aperiam harum vero maiores. Esse possimus nisi voluptates sapiente nostrum. Aliquam ipsum dolor nostrum obcaecati esse Omnis eius cupiditate quas repellat assumenda soluta, placeat Incidunt soluta in.
+      <menu class="songs-submenu">
+	<button class="playing-on">
+	  <ion-icon name="desktop-outline"></ion-icon>
+	</button>
+	<button class="song-list">
+	  <ion-icon name="menu"></ion-icon>
+	</button>
+      </menu>
+      <div class="lyrics-container">
+	<header class="header-text">
+	  <p>Lyrics</p>
+	</header>
+	<div class="lyrics">
+	  I'm not afraid, I'm not afraid (yeah)
+	  To take a stand, it's been a ride
+	  Everybody, I guess I had to
+	  Go to that place
+	  To get to this one
+	  Now some of you
+	  Might still be in that place
+	  If you're tryin' to get out
+	  Just follow me
+	  I'll get you there
+	</div>
+	<button class="share-button">
+	  <ion-icon class="share-icon" name="share-social-outline"></ion-icon>
+	  <p>Share</p>
+	</button>
       </div>
-      <button class="share-button">
-	<ion-icon name="share-social-outline"></ion-icon>
-	<p>Share</p>
-      </button>
     </section>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
